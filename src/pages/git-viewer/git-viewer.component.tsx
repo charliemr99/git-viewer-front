@@ -3,9 +3,11 @@ import Content from "../../components/Content/content.component";
 import Footer from "../../components/footer.component";
 import Header from "../../components/Header/header.component";
 
+import "../../App.css";
+
 const GitViewer: React.FC = (): JSX.Element => {
   return (
-    <div>
+    <div className={"app-cointainer"}>
       <Header />
       <Content />
       <Footer />

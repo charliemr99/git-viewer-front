@@ -1,5 +1,6 @@
 .name-bar {
   display: flex;
+  height: auto;
   background-color: #101113;
   align-items: center;
 }
@@ -33,10 +34,21 @@
 .content {
   display: flex;
   background-color: #101113;
-  height: max-content;
+  height: auto;
+  min-height: 74vh;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.content__commit {
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: "2vh";
+  margin-bottom: "2vh";
 }
 
 .content__commitcontainer {
@@ -84,7 +96,8 @@
 }
 
 .commit_data a:hover {
-  border-bottom: 1px solid white;
+  text-decoration: underline white;
+  /* border-bottom: 1px solid white; */
 }
 
 .commit_title small {
