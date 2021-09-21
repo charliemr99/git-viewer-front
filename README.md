@@ -2,7 +2,7 @@
 
 ## Description
 
-This is the frontend repository of the Git Viewer Task developed using [React.js](https://reactjs.org/) framework.
+This is the frontend repository of the Git Viewer Task developed using [React.js](https://reactjs.org/) framework, Redux and Sagas for side effect managing.
 
 Don't forget to also visit [git-viewer-back](https://github.com/charliemr99/git-viewer-back) and follow the installation procedures described on README.
 
