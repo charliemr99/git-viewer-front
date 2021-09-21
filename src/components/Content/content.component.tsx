@@ -60,7 +60,6 @@ const Content: React.FC = () => {
           <img
             src={search}
             alt="Search Logo"
-            style={{ width: "30px", height: "30px" }}
             onClick={() => {
               dispatch(getCommits({ username, repository }));
             }}

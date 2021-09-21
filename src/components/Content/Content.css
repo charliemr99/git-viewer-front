@@ -6,9 +6,8 @@
 }
 
 .name-bar img {
-  padding: 2vw;
-  width: 2vh;
-  height: 2vh;
+  width: 30px;
+  height: 30px;
 }
 
 .name-bar__userandrepo {
@@ -24,11 +23,17 @@
   padding: 1vh;
   margin: 0;
   width: max-content;
+  outline: none;
 }
 
 .name-bar__userandrepo__search {
   background-color: #1c1e22;
   margin-left: auto;
+  display: flex;
+  width: 68px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
