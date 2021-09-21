@@ -14,7 +14,7 @@ import Commit from "../Commit/commit.component";
 const Content: React.FC = () => {
   // BASE & STATES
   const dispatch = useDispatch();
-  const { commits } = useSelector((state: IState) => state.commits);
+  const { commits, failure } = useSelector((state: IState) => state.commits);
   const [username, setUsername] = React.useState("charliemr99");
   const [repository, setRepository] = React.useState("git-viewer-back");
   const [commitsData, setCommitsData] = React.useState(commits);
@@ -68,7 +68,7 @@ const Content: React.FC = () => {
         </div>
       </div>
       <div className="content">
-        {commitsData ? (
+        {commitsData && !failure ? (
           <div className="content__commitcontainer">
             {commitsData.map((item, index) => {
               return (
@@ -82,12 +82,22 @@ const Content: React.FC = () => {
             })}
           </div>
         ) : (
-          <div className="content__empty">
-            <img
-              src={data}
-              alt="No data Logo"
-              style={{ width: "35vh", height: "35vh" }}
-            />
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div className="content__empty">
+              <img
+                src={data}
+                alt="No data Logo"
+                style={{ width: "35vh", height: "35vh" }}
+              />
+            </div>
+            {failure && (
+              <>
+                <h5
+                  style={{ color: "white" }}
+                >{`Repository ${failure.response.data.message}`}</h5>
+                <h5 style={{ color: "white" }}>{failure.message}</h5>
+              </>
+            )}
           </div>
         )}
       </div>

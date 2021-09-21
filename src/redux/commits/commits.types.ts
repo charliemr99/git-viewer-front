@@ -5,7 +5,7 @@ export type CommitsFailure = "REPOSITORY_NOT_FOUND";
 export type CommitsState = {
   commits: ICommit[] | null;
   isLoading: boolean;
-  failure: CommitsFailure | null;
+  failure: any | null;
 };
 
 export type GetCommitsAction = {
@@ -20,7 +20,7 @@ export type SaveCommitsAction = {
 
 export type ReportCommitsFailureAction = {
   type: "REPORT_FAILURE";
-  failure: CommitsFailure;
+  failure: any;
 };
 
 export type CommitsAction =

@@ -15,6 +15,7 @@ const commitsReducer = (
       return {
         ...state,
         isLoading: true,
+        failure: null,
       };
     case "GET_COMMITS:FINISH":
       return {

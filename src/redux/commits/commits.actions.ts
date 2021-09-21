@@ -1,6 +1,5 @@
 import { ICommit, IGetCommitsActionProps } from "../../types/commits";
 import {
-  CommitsFailure,
   GetCommitsAction,
   ReportCommitsFailureAction,
   SaveCommitsAction,
@@ -19,7 +18,7 @@ export const saveCommits = (data: ICommit[]): SaveCommitsAction => ({
 });
 
 export const reportCommitsFailure = (
-  failure: CommitsFailure
+  failure: any
 ): ReportCommitsFailureAction => ({
   type: "REPORT_FAILURE",
   failure: failure,
