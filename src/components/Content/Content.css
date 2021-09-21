@@ -1,0 +1,100 @@
+.name-bar {
+  display: flex;
+  background-color: #101113;
+  align-items: center;
+}
+
+.name-bar img {
+  padding: 2vw;
+  width: 2vh;
+  height: 2vh;
+}
+
+.name-bar__userandrepo {
+  display: flex;
+  color: white;
+}
+
+.name-bar__userandrepo input {
+  background-color: transparent;
+  color: white;
+  border-width: 0;
+  font-size: 3vw;
+  padding: 1vh;
+  margin: 0;
+  width: max-content;
+}
+
+.name-bar__userandrepo__search {
+  background-color: #1c1e22;
+  margin-left: auto;
+}
+
+.content {
+  display: flex;
+  background-color: #101113;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+}
+
+.content__commitcontainer {
+  border: 1px solid #8b949e;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 80%;
+  height: max-content;
+}
+
+.commit {
+  padding: 1vh 1vw;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: start;
+  color: white;
+  border-bottom: 1px solid #8b949e;
+}
+
+.commit:hover {
+  background-color: #161b22;
+}
+
+.commit:last-of-type {
+  border-bottom: 0;
+}
+
+.commit_title {
+  display: flex;
+  align-items: center;
+}
+
+.commit_data {
+  display: flex;
+  flex-direction: column;
+}
+.commit_data a {
+  font-weight: bold;
+  margin: 0;
+  margin-left: 1vw;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+}
+
+.commit_data a:hover {
+  border-bottom: 1px solid white;
+}
+
+.commit_title small {
+  padding-left: 1vw;
+}
+
+.commit_title img {
+  border-radius: 50%;
+}
+
+.commit_picture {
+  width: max-content;
+}
