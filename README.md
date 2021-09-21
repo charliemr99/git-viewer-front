@@ -4,7 +4,9 @@
 
 This is the frontend repository of the Git Viewer Task developed using [React.js](https://reactjs.org/) framework, Redux and Sagas for side effect managing.
 
-Don't forget to also visit [git-viewer-back](https://github.com/charliemr99/git-viewer-back) and follow the installation procedures described on README.
+This app permits the visualization of any public guthub repository using GitHub API from backend. By default shows the commits of [git-viewer-back](https://github.com/charliemr99/git-viewer-back).
+
+Don't forget to visit backend repository and follow the installation procedures described on README.
 
 ## Installation
 
